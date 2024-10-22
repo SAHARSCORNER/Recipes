@@ -1,0 +1,21 @@
+
+VLAN			
+Step 1: select 1841 PT-router,2960 PT-switch and 4 pc			
+step 2: connect all the devices 			
+step 3: IP configure all the devices 			
+		1. Physical lan-192.168.1.1	
+		2. VLAN - 192.168.20.1	
+step 4: configure switch 			
+		Add VLAN database	
+		and fastethernet 0/5-change access to trunk 	
+		fastethernet 0/3,0/4-change VLAN-20	
+step 5: configure router 			
+		Add VLAN database	
+		Go to CLI and run the following command 	
+			exit
+			config t
+			int f 0/0.1
+			encapsulation dot1q 20
+			ip address 192.168.20.1 255.255.255.0
+			exit 
+			exit

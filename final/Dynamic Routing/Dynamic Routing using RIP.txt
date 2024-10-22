@@ -1,0 +1,10 @@
+Dynamic Routing using RIP			
+Step 1: select 2 PT-router,2 PT-switch and 4 pc			
+step 2: connect all the devices 			
+step 3: IP configure all the devices 			
+		1.Network 1- 192.168.0.0(Default gateway-192.168.0.1)	
+		2.Network 2- 192.168.1.0	
+		3.Network 3- 192.168.2.0(Default gateway-192.168.2.1)	
+step 4: Configure Router using ip address as (router 1-192.168.0.1) and (router 2- 192.168.2.1)			
+atep 5: Go to RIP in router->config->RIP of both the router and add network address   			
+

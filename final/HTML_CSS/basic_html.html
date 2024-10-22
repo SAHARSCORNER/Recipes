@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <img src="https://th.bing.com/th/id/OIP.iBebiLt6ymoyrpLSzepQdQHaCV?rs=1&pid=ImgDetMain" alt="Registration Image" width="300">
+    <p>Please fill out the following form to register an account:</p>
+    
+    <!-- Form Section -->
+    <form action="/submit_registration" method="post">
+        <h2>Personal Information</h2>
+        <table>
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+        </table>
+        <h2>Account Preferences</h2>
+        <ul>
+            <li>
+                <label for="news">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="news" name="news">
+            </li>
+            <li>
+                <label for="updates">Receive Updates:</label>
+                <input type="checkbox" id="updates" name="updates">
+            </li>
+        </ul>
+        <h3>Gender</h3>
+        <ol>
+            <li>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </li>
+            <li>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </li>
+            <li>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </li>
+        </ol>
+        
+        <!-- Submit Button -->
+        <p><input type="submit" value="Register"></p>
+    </form>
+    
+    <!-- Footer Information -->
+    <footer>
+        <p>For assistance, please contact <a href="mailto:support@example.com">support@example.com</a></p>
+    </footer>
+
+</body>
+</html>

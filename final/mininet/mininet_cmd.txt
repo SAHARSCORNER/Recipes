@@ -1,0 +1,6 @@
+			
+Mininet			
+sudo mu			
+h1 ping h2			
+dump			
+h1 ifconfig -a
